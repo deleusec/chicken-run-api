@@ -3,6 +3,9 @@ module.exports = app => {
 
     const router = require("express").Router();
 
+    // Create a new Chicken
+    router.post("/", chickens.create);
+
     // Retrieve all Chickens
     router.get("/", chickens.findAll);
 
