@@ -12,6 +12,8 @@ app.get("/", (req, res) => {
     res.json({ message: "Welcome" });
 });
 
+require("./routes/chicken.routes")(app);
+
 app.listen(port, () => {
     console.log(`App listening on port http://localhost:${port}/`)
 })
